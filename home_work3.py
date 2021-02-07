@@ -122,7 +122,7 @@ def click_cart(context):
 def verify_empty_cart(context):
     actual_text3 = context.driver.find_element_by_css_selector("div.a-row.sc-your-amazon-cart-is-empty h2").text
     expected_text3 = 'Your Amazon Cart is empty'
-    assert expected_text3 == actual_text3
+    assert expected_text3 == actual_text3, f'Expected {expected_text3} but got {actual_text3}'
     print('Your Shopping Cart is empty')
 
 
